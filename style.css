@@ -379,13 +379,13 @@
 @media only screen and (max-width : 500px) {
     .hero {
         margin-top: 0px;
-        font-size: 0.4em;
-        height: 165px;
+        font-size: 6px;
+        height: 150px;
 
     }
     
     .hero img {
-        width: 190px;
+        width: 160px;
 
     }
     .resturent-item-cover {
