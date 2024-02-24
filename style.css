@@ -355,11 +355,13 @@
         margin-top: 0px;
         font-size: 0.6em;
         height: 200px;
+        font-weight: bold;
 
     }
 
     .hero img {
         width: 260px;
+        padding-right: 0;
 
     }
 
@@ -373,4 +375,30 @@
         height: 280px;
     }
 
+}
+@media only screen and (max-width : 500px) {
+    .hero {
+        margin-top: 0px;
+        font-size: 0.4em;
+        height: 165px;
+
+    }
+    
+    .hero img {
+        width: 190px;
+
+    }
+    .resturent-item-cover {
+        height: 200px;
+    }
+    
+    .all-resturant>div {
+        height: 280px !important;
+    }
+.resturent-container>h2{
+    font-size: 20px;
+}
+.direction{
+    font-size: 12px;
+}
 }
