@@ -107,6 +107,7 @@
 
 .user {
     display: none;
+    cursor: pointer;
 }
 
 /* HERO */
@@ -158,6 +159,7 @@
 
 .resturent-container h2 {
     padding: 15px 0;
+    font-size: 30px;
 }
 
 .all-resturant {
@@ -175,6 +177,7 @@
     height: 250px !important;
     border: 1px solid lightgray;
     width: 32%;
+    margin-bottom: 20px;
     border-radius: 15px;
 
 }
@@ -204,6 +207,23 @@
     background-size: cover;
     background-position: center;
 }
+.resturent4 .resturent-item-cover {
+    background: url('Images/pic-5.webp');
+    background-size: cover;
+    background-position: center;
+}
+.resturent5 .resturent-item-cover {
+    background: url('Images/pic-6.webp');
+    background-size: cover;
+    background-position: center;
+}
+.resturent6 .resturent-item-cover {
+    background: url('Images/pic-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
 
 .item-details {
     display: flex;
@@ -212,12 +232,18 @@
     justify-content: space-between;
 }
 
+.item-name p{
+    margin-bottom: 10px;
+}
 .item-details p {
     font-size: 14px;
+    
 }
 
 .item-details h5 {
     font-size: 16px;
+    margin: 0;
+    margin-bottom: 5px;
     font-weight: bold;
 }
 
@@ -257,6 +283,9 @@
     font-size: 14px;
     width: fit-content;
 }
+
+
+
 
 @media only screen and (max-width : 1050px) {
 

@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,7 +16,9 @@
 <body>
     <div class="header">
         <div class="nav-bar">
-            <div class="user">
+            <div class="user" data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
+            class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >
                 <i class="fa-regular fa-user"></i>
             </div>
             <img src="Images/logo.avif" alt="logo" class="logo">
@@ -68,7 +69,7 @@
                     <div class="discount-bar">
                         <i class="fa-solid fa-star-of-david"></i> 10 % off
                     </div>
-                    
+
                 </div>
                 <div class="item-details">
                     <div class="item-name">
@@ -81,7 +82,7 @@
                     </div>
                 </div>
 
-               
+
             </div>
 
             <div class="resturent2">
@@ -89,7 +90,7 @@
                     <div class="discount-bar">
                         <i class="fa-solid fa-star-of-david"></i> 20 % off
                     </div>
-                    
+
                     <div class="discount-bar2">
                         <i class="fa-solid fa-star-of-david"></i> Panda high street
                     </div>
@@ -105,8 +106,62 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="resturent3">
+                <div class="resturent-item-cover">
+                    <div class="discount-bar">
+                        <i class="fa-solid fa-star-of-david"></i> 25 % off
+                    </div>
+                </div>
+                <div class="item-details">
+                    <div class="item-name">
+                        <h5>Islamabad Chicken Biryani</h5>
+                        <p>$$ . Pakistani</p>
+                    </div>
+                    <div class="item-rating">
+                        <span><i class="fa-solid fa-star rating-star"></i> 5.4</span>
+                        <span class="review-rating">(63)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resturent4">
+                <div class="resturent-item-cover">
+                    <div class="discount-bar">
+                        <i class="fa-solid fa-star-of-david"></i> 25 % off
+                    </div>
+                </div>
+                <div class="item-details">
+                    <div class="item-name">
+                        <h5>Islamabad Chicken Biryani</h5>
+                        <p>$$ . Pakistani</p>
+                    </div>
+                    <div class="item-rating">
+                        <span><i class="fa-solid fa-star rating-star"></i> 5.4</span>
+                        <span class="review-rating">(63)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resturent5">
+                <div class="resturent-item-cover">
+                    <div class="discount-bar">
+                        <i class="fa-solid fa-star-of-david"></i> 25 % off
+                    </div>
+                </div>
+                <div class="item-details">
+                    <div class="item-name">
+                        <h5>Islamabad Chicken Biryani</h5>
+                        <p>$$ . Pakistani</p>
+                    </div>
+                    <div class="item-rating">
+                        <span><i class="fa-solid fa-star rating-star"></i> 5.4</span>
+                        <span class="review-rating">(63)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resturent6">
                 <div class="resturent-item-cover">
                     <div class="discount-bar">
                         <i class="fa-solid fa-star-of-david"></i> 25 % off
@@ -126,12 +181,79 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
+
+
+    
+    <!-- Main modal -->
+    <div id="authentication-modal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-md max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                        <img src="Images/logo.avif" class="logo pop-up-logo" alt="">
+                    </h3>
+                    <button type="button"
+                        class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-hide="authentication-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5">
+                    <form class="space-y-4" action="#">
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                                email</label>
+                            <input type="email" name="email" id="email"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                placeholder="name@company.com" required />
+                        </div>
+                        <div>
+                            <label for="password"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                                password</label>
+                            <input type="password" name="password" id="password" placeholder="••••••••"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                required />
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="flex items-start">
+                                <div class="flex items-center h-5">
+                                    <input id="remember" type="checkbox" value=""
+                                        class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-600 dark:border-gray-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                                        required />
+                                </div>
+                                <label for="remember"
+                                    class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember
+                                    me</label>
+                            </div>
+                            <a href="#" style="color: #e21b70;" class="text-sm hover:underline ">Lost
+                                Password?</a>
+                        </div>
+                        <button style="background-color: #ff2b88;" type="submit"
+                            class="w-full text-white hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login
+                            to your account</button>
+                        <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
+                            Not registered? <a href="#" style="color: #e21b70;" class=" hover:underline ">Sign up</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="app.js"></script>
+
 </body>
 
 </html>
